@@ -1,0 +1,15 @@
+{
+  "templates": [
+    {
+      "type": "front-page",
+      "path": "/"
+    },
+    {
+      "type": "post-type",
+      "name": "page",
+      "template": "SINGLE_ANY",
+      "slug": "jeter",
+      "path": "/[slug]"
+    }
+  ]
+}

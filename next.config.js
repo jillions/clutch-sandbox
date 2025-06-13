@@ -1,18 +1,9 @@
-const { withFaust, getWpHostname } = require('@faustwp/core');
+const clutchConfig = require('./next.config.clutch.js');
 
-/**
- * @type {import('next').NextConfig}
- **/
-module.exports = withFaust({
-  reactStrictMode: true,
-  sassOptions: {
-    includePaths: ['node_modules'],
-  },
-  images: {
-    domains: [getWpHostname()],
-  },
-  i18n: {
-    locales: ['en'],
-    defaultLocale: 'en',
-  },
-});
+// Enable viewTransitions
+clutchConfig.experimental = {
+  ...clutchConfig.experimental,
+  viewTransition: true,
+};
+
+module.exports = clutchConfig;
