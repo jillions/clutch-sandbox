@@ -1,52 +1,56 @@
 {
-  "name": "@faustjs/atlas-blueprint-portfolio",
-  "version": "0.2.0",
-  "private": true,
-  "scripts": {
-    "dev": "faust dev",
-    "build": "faust build",
-    "generate": "faust generatePossibleTypes",
-    "start": "faust start",
-    "lint": "faust lint",
-    "clean": "rimraf .next node_modules",
-    "wpe-build": "faust build",
-    "format": "prettier --write './**/*.{js,jsx,md,mdx,css,scss}'",
-    "format:check": "prettier --check './**/*.{js,jsx,md,mdx,css,scss}'"
-  },
   "dependencies": {
-    "@apollo/client": "3.7.0",
-    "@babel/runtime": "^7.27.0",
-    "@babel/runtime-corejs3": "^7.27.0",
-    "@faustwp/cli": "^1.0.0",
-    "@faustwp/core": "^1.0.0",
-    "classnames": "^2.3.1",
-    "graphql": "^16.8.1",
-    "next": "^14.2.26",
-    "normalize.css": "^8.0.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-icons": "4.6.0",
-    "react-responsive-carousel": "3.2.23",
-    "sharp": "^0.33.5",
-    "use-debounce": "8.0.4"
+    "@clutch-marketplace/clutch.clutch-elements": "*",
+    "@clutch-marketplace/clutch.marketing-templates": "^1.12.2",
+    "@clutch-marketplace/clutch.wordpress": "^2.3.3",
+    "@clutch-marketplace/clutch.video": "^0.4.3",
+    "@clutch-marketplace/clutch.functions": "^1.0.4",
+    "@clutch-marketplace/clutch.google-maps": "^1.4.6",
+    "@clutch-marketplace/clutch.google-analytics": "^1.0.2",
+    "classnames": "^2.5.1",
+    "next": "15.3.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "qs": "^6.13.0",
+    "lodash.isequal": "^4.5.0",
+    "zustand": "^5.0.3",
+    "lucide-react": "^0.511.0",
+    "iconoir-react": "^7.11.0",
+    "plaiceholder": "^3.0.0",
+    "@clutch-marketplace/clutch.lightbox": "^1.0.3",
+    "@clutch-marketplace/clutch.actions": "^1.0.2",
+    "@clutch-marketplace/clutch.graphql": "^1.0.2",
+    "@clutch-marketplace/clutch.rest": "^1.0.1"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@wordpress/base-styles": "^4.42.5",
-    "@wordpress/block-library": "^8.28.12",
-    "dotenv-flow": "^3.2.0",
-    "eslint": "8.9.0",
-    "eslint-config-next": "12.0.10",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-import": "^2.25.4",
-    "prettier": "^2.5.1",
-    "rimraf": "^3.0.2",
-    "sass": "^1.54.9"
+    "@svgr/core": "8.1.0",
+    "@svgr/plugin-jsx": "^8.1.0",
+    "@svgr/plugin-svgo": "^8.1.0",
+    "@svgr/webpack": "^8.1.0",
+    "@swc/core": "^1.7.4",
+    "@tailwindcss/postcss": "4.0.9",
+    "@types/node": "20.6.0",
+    "@types/react": "18.3.3",
+    "cross-env": "^7.0.3",
+    "eslint": "^9.18.0",
+    "eslint-config-next": "^14.2.23",
+    "eslint-config-prettier": "^9.1.0",
+    "postcss-preset-env": "^9.1.2",
+    "prettier": "^3.4.2",
+    "swc-loader": "^0.2.6",
+    "tailwindcss": "4.0.9",
+    "typescript": "^5.4.5"
   },
-  "engines": {
-    "node": ">=14.0.0",
-    "npm": ">=6.0.0"
+  "scripts": {
+    "build": "next build",
+    "start": "next start",
+    "dev": "cross-env NODE_OPTIONS=\"--inspect=$DEBUG_PORT\" next dev --turbopack"
   },
   "overrides": {
-    "postcss": ">=8.4.31"
+    "next": "15.3.3"
   }
 }
