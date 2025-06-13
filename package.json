@@ -36,7 +36,7 @@
     "@types/node": "20.6.0",
     "@types/react": "18.3.3",
     "cross-env": "^7.0.3",
-    "eslint": "^9.18.0",
+    "eslint": "^8.56.0",
     "eslint-config-next": "^14.2.23",
     "eslint-config-prettier": "^9.1.0",
     "postcss-preset-env": "^9.1.2",
