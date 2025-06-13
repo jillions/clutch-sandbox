@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "@clutch-marketplace/clutch.clutch-elements": "*",
     "@clutch-marketplace/clutch.marketing-templates": "^1.12.2",
     "@clutch-marketplace/clutch.wordpress": "^2.3.3",
     "@clutch-marketplace/clutch.video": "^0.4.3",
